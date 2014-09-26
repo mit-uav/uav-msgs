@@ -42,6 +42,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation
 
 ## Generate messages in the 'msg' folder
 add_message_files(
+	FILES
 	UavEstState.msg	
 )
 
