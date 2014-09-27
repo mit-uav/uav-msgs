@@ -4,12 +4,8 @@
 # Timestamp of state estimate
 time timestamp
 
-# X,Y position [m]
-float64 pos_x
-float64 pos_y
-
-# Altitude [m]
-float64 altitude
+# Position [m]
+geometry_msgs/PoseWithCovariance pose
 
 # Velocities [m/s]
 float64 vel_x
