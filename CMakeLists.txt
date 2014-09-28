@@ -48,7 +48,9 @@ find_package(catkin REQUIRED COMPONENTS roscpp
 add_message_files(
 	FILES
 	UavEstState.msg
-	RoombaEstState.msg	
+	RoombaEstState.msg
+	OpticalFlowPost.msg	
+	GridLinePosPost.msg
 )
 
 ## Generate services in the 'srv' folder
