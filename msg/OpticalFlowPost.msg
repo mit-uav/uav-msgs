@@ -1,12 +1,20 @@
 # OpticalFlowPost.msg
 # Post-processed optical flow measurement
-# Message describing simulated position with grid noise
 
 # Timestamp of measurement
 time timestamp
 
-# Positions [m]
-# in a 20m x 20m grid with (0,0) at center
+# Quality
+# scalar measure of flow quality [0,255]
+# 255 => best quality
+int32 quality
 
-geometry_msgs/Point position
-float64[3] vel
+# Uncertainty
+# scalar measure of uncertainty in range [0,1]
+# 0 is most certain, 1 is least certain
+# calculated from quality
+float64 uncertainty
+
+# Velocities
+float64 x_vel
+float64 y_vel
