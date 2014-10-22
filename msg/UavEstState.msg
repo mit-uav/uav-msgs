@@ -4,12 +4,15 @@
 # Timestamp of state estimate
 time timestamp
 
-# Position [m]
-geometry_msgs/Pose pose
-float64[36] pose_covariance
+# State vector and covariance
+float64[] state
+float64[] covariance
 
-# Velocities [m/s]
-float64 vel_x
-float64 vel_y
-float64 vel_z
-float64[9] vel_covariance
+# State field definitions
+int32 POS_X = 0
+int32 POS_Y = 1
+# int32 POS_Z = 0
+# int32 VEL_X = 0
+# int32 VEL_Y = 0
+# int32 VEL_Z = 0
+
